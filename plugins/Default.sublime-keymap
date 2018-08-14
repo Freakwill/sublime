@@ -1,0 +1,65 @@
+[
+  {
+  	"context": [ { "key": "selector", "operator": "equal", "operand": "source.python", "match_all": true } ],
+	"keys": 
+	[
+	  "CMD+SHIFT+3"
+	],
+	"command": "first_line"
+  },
+
+  {
+  	"context": [ { "key": "selector", "operator": "equal", "operand": "source.python", "match_all": true } ],
+	"keys": 
+	[
+	  "shift+enter"
+	],
+	"command": "def"
+  },
+
+  {"context": [ { "key": "selector", "operator": "equal", "operand": "source.python", "match_all": true } ],
+	"keys": 
+	[
+	  "CMD+m"
+	],
+	"command": "add_main"
+  },
+
+  {"context": [ { "key": "selector", "operator": "equal", "operand": "source.python", "match_all": true } ],
+	
+	"keys": 
+	[
+	  "CMD+'"
+	],
+	"command": "add_quote"
+  },
+
+   {
+   	"context": [ { "key": "selector", "operator": "equal", "operand": "source.python", "match_all": true } ],
+	
+	"keys": 
+	[
+	  "CMD+shift+c",
+	],
+	"command": "clean"
+  }
+  ,
+
+{
+   	"context": [ { "key": "selector", "operator": "equal", "operand": "source.python", "match_all": true } ],
+	
+	"keys": 
+	[
+	  "ctrl+alt+c",
+	],
+	"command": "cmd"
+  }
+  ,
+   {
+	"keys": 
+	[
+	  "ctrl+alt+t",
+	],
+	"command": "basic_test"
+  }
+]
