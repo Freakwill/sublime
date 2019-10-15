@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[import pickle
+pklPath = pathlib.Path('${1:filename}.pkl')
+if .exists():
+    with open(pklPath, 'rb') as fo:
+        ${2:obj} = pickle.load(pklPath)
+else:
+    ${2:obj} = ${3:constructor}
+    with open(pklPath, 'wb') as fo:
+        pickle.dump(${2:obj}, fo)]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pickle</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>pickle-load</description>
+</snippet>

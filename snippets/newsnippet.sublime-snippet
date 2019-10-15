@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+def __new__(cls, *args, **kwargs):
+    # constructor of ${1:classname}
+    obj = super(${1:classname}, cls).__new__(cls)
+    # obj.prop = value
+    return obj
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>new</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Define __new__ method</description>
+</snippet>

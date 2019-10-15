@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+
+class UpdateAnim(object):
+    def __init__(self, ax):
+        self.ax = ax
+        # Set up plot parameters
+
+    def init(self):
+        self.success = 0
+        self.line.set_data([], [])
+        return self.line,
+
+    def __call__(self, i):
+        if i == 0:
+            return self.init()
+        else:
+            # update self.line
+            return self.line,
+
+fig, ax = plt.subplots()
+ua = UpdateAnim(ax, prob=0.7)
+anim = FuncAnimation(fig, ua, frames=np.arange(100), init_func=ua.init, interval=100, blit=True)
+plt.show()
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>anim</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>animation of matplotlib</description>
+</snippet>

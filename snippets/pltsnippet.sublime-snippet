@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[import matplotlib.pyplot as plt
+${1:fig = plt.figure()}
+${2:ax = fig.add_subplot(111)}
+${3:ax.plot(x, y)}
+plt.show()]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>plt</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Import matplotlib</description>
+</snippet>

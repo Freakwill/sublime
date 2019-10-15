@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[import argparse
+
+parser = argparse.ArgumentParser(description='${1:description}')
+parser.add_argument('-${2:s}', dest='${3:string}', action='store', metavar='${4:STRING}', help='${5:help}')
+
+args = parser.parse_args()
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>argparse</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>import argparse</description>
+</snippet>

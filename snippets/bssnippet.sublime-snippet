@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[import bs4
+import requests
+
+URL = "http://www.${1:url}"
+
+response = requests.get(URL)
+soup = bs4.BeautifulSoup(response.text, "lxml")
+for a in soup.find_all('div', {'class': '${2:value}'}):
+    print(a.text)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Beautful Soap</description>
+</snippet>

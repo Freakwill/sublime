@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+import pandas as pd
+data = pd.read_csv('data.csv')
+keys = data.columns
+A = data[[keys_A]].values
+B = data[[keys_B]].values
+A, A_test, B, B_test = train_test_split(A, B, test_size=0.2)
+r = ${0:Regressor}()
+r.fit(A, B)
+B_pred = r.predict(A_test)
+print(r.accurate(A_test, B_test))
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>data</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Import data for training and testing</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[import time
+
+times = []
+for _ in range(${2:number}):
+    time1 = time.perf_counter()
+    # ${1:code}
+    time2 = time.perf_counter()
+    times.append(time2 - time1)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>perf</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Python Code Performance</description>
+</snippet>

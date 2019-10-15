@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[import pandas as pd
+${0:data = pd.read_csv('test.csv', index_col=0)}
+${1:N, r = data.shape}
+${2:a = data.iloc[k, key]}
+${3:keys = data.columns
+X = data[keys[:-1]].values
+y = data[keys[-1]].values}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Import pandas</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[import fire
+fire.Fire(${1:func})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fire</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Import fire (3th part-lib)</description>
+</snippet>

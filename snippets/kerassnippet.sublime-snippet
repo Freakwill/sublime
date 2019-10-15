@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[from keras.models import Sequential
+from keras.layers import Dense
+
+model = Sequential()
+model.add(Dense(units=${3:64}, activation='${5:relu}', input_dim=${1:100}))
+model.add(Dense(units=${2:10}, activation='${4:softmax}'))
+model.compile(loss='${6:categorical_crossentropy}',
+              optimizer='${7:adam}',
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train, epochs=10, batch_size=32)
+loss_and_metrics = model.evaluate(x_test, y_test, batch_size=128)
+classes = model.predict(x_test, batch_size=128)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>keras</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Build the Sequential model with Keras</description>
+</snippet>

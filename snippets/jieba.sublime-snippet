@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[import jieba
+
+seg_list = jieba.cut("${1:text}")  # 默认是精确模式
+print("|".join(seg_list))]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>jieba</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>jieba template code</description>
+</snippet>
